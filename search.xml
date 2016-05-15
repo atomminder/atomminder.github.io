@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Unbiased and Biased Estimators]]></title>
+      <url>http://yoursite.com/2016/05/13/Statistics_Unbiased_and_Biased_Estimators/</url>
+      <content type="html"><![CDATA[<h3 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h3><hr>
+<p><strong>If a sample $ X_1,X_2 ,…, X_n $ has unknown finite variance $ \sigma^2 $, then, what is the bias between sample variance and true variance?</strong></p>
+<hr>
+<h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p><em>Sample Variance Definition:</em><br><span>$$\begin{align}
+S^2=\frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X})^2   \nonumber
+\end{align}$$</span><!-- Has MathJax --></p>
+<hr>
+<p><em>Put above equation aside, consider the identity:</em><br><span>$$\begin{align}
+\sum_{i=1}^{n}(X_i-\mu)^2   
+&amp; {=} \sum_{i=1}^{n}((X_i-\overline{X})+(\overline{X}-\mu))^{2}     \nonumber\\
+&amp; {=} \sum_{i=1}^{n}((X_i-\overline{X})^2+2\sum_{i=1}^{n}((X_i-\overline{X})(\overline{X}-\mu))+(\overline{X}-\mu))^2   \nonumber\\
+&amp; {=} \sum_{i=1}^{n}(X_i-\overline{X})^2+\sum_{i=1}^{n}(\overline{X}-\mu)^2   \nonumber
+\end{align}$$</span><!-- Has MathJax --></p>
+<hr>
+<p><em>So,</em></p>
+<span>$$\begin{align}
+\sum_{i=1}^{n}(X_i-\overline{X})^2{=}\sum_{i=1}^{n}(X_i-\mu)^2-\sum_{i=1}^{n}(\overline{X}-\mu)^2   \nonumber
+\end{align}$$</span><!-- Has MathJax -->
+<p><em>From this and sample variance definition, we can derive that:</em><br><span>$$\begin{align}
+{E(S^2)}  
+&amp; {=} {E}{[}\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2-(\overline{X}-\mu)^2{]}  \nonumber\\
+&amp; {=} \frac{1}{n}n\sigma^2-\frac{1}{n}\sigma^2  \nonumber\\
+&amp; {=} \frac{n-1}{n}\sigma^2  \nonumber
+\end{align}$$</span><!-- Has MathJax --></p>
+<hr>
+<p><em>From above, we find that $ S^2 $ is a biased estimator for $ \sigma^2 $. </em><br><em>That is,</em></p>
+<span>$$\begin{align}
+S_{biased}^{2}=S^2=\frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X})^2    \nonumber
+\end{align}$$</span><!-- Has MathJax -->
+<p><em>In addition, </em><br>$$ E[\frac{n}{n-1}S^2]{=}\sigma^2 $$</p>
+<p><em>As a result,</em></p>
+<span>$$\begin{align}
+S_{unbiased}^{2}{=}\frac{n}{n-1}S^2{=}\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\overline{X})^2    \nonumber
+\end{align}$$</span><!-- Has MathJax -->
+<hr>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><span>$$\begin{align}
+S_{biased}^{2}{=}\frac{n-1}{n}S_{unbiased}^{2}   \nonumber
+\end{align}$$</span><!-- Has MathJax -->
+<hr>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p> <i class="fa fa-rocket" aria-hidden="true"></i>  <a href="http://math.arizona.edu/~jwatkins/m-unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/m-unbiased.pdf</a><br> <i class="fa fa-rocket" aria-hidden="true"></i>   <a href="http://math.arizona.edu/~jwatkins/N_unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/N_unbiased.pdf</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
