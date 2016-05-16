@@ -45,7 +45,9 @@ S_{unbiased}^{2}{=}\frac{n}{n-1}S^2{=}\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\overline{
 S_{biased}^{2}{=}\frac{n-1}{n}S_{unbiased}^{2}   \nonumber
 \end{align}$$</span><!-- Has MathJax -->
 <hr>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p> <i class="fa fa-rocket" aria-hidden="true"></i>  <a href="http://math.arizona.edu/~jwatkins/m-unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/m-unbiased.pdf</a><br> <i class="fa fa-rocket" aria-hidden="true"></i>   <a href="http://math.arizona.edu/~jwatkins/N_unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/N_unbiased.pdf</a></p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><blockquote>
+<p>math.arizona.edu/~jwatkins/m-unbiased.pdf <a href="http://math.arizona.edu/~jwatkins/m-unbiased.pdf" target="_blank" rel="external"><i class="fa fa-rocket" aria-hidden="true"></i></a><br>math.arizona.edu/~jwatkins/N_unbiased.pdf <a href="http://math.arizona.edu/~jwatkins/N_unbiased.pdf" target="_blank" rel="external"><i class="fa fa-rocket" aria-hidden="true"></i></a> </p>
+</blockquote>
 ]]></content>
     </entry>
     

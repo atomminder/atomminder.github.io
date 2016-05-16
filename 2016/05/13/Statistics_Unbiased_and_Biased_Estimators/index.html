@@ -96,7 +96,7 @@ AnalysisSample Variance Definition:$$\begin{align}">
 If a sample $ X_1,X_2 ,…, X_n $ has unknown finite variance $ \sigma^2 $, then, what is the bias between sample variance and true variance?
 
 AnalysisSample Variance Definition:$$\begin{align}">
-<meta property="og:updated_time" content="2016-05-15T00:11:13.000Z">
+<meta property="og:updated_time" content="2016-05-16T00:21:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unbiased and Biased Estimators">
 <meta name="twitter:description" content="Problem
@@ -387,7 +387,9 @@ S_{unbiased}^{2}{=}\frac{n}{n-1}S^2{=}\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\overline{
 S_{biased}^{2}{=}\frac{n-1}{n}S_{unbiased}^{2}   \nonumber
 \end{align}$$</span><!-- Has MathJax -->
 <hr>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p> <i class="fa fa-rocket" aria-hidden="true"></i>  <a href="http://math.arizona.edu/~jwatkins/m-unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/m-unbiased.pdf</a><br> <i class="fa fa-rocket" aria-hidden="true"></i>   <a href="http://math.arizona.edu/~jwatkins/N_unbiased.pdf" target="_blank" rel="external">http://math.arizona.edu/~jwatkins/N_unbiased.pdf</a></p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><blockquote>
+<p>math.arizona.edu/~jwatkins/m-unbiased.pdf <a href="http://math.arizona.edu/~jwatkins/m-unbiased.pdf" target="_blank" rel="external"><i class="fa fa-rocket" aria-hidden="true"></i></a><br>math.arizona.edu/~jwatkins/N_unbiased.pdf <a href="http://math.arizona.edu/~jwatkins/N_unbiased.pdf" target="_blank" rel="external"><i class="fa fa-rocket" aria-hidden="true"></i></a> </p>
+</blockquote>
 
       
     </div>
@@ -823,7 +825,28 @@ S_{biased}^{2}{=}\frac{n-1}{n}S_{unbiased}^{2}   \nonumber
     $('.popup').click(function(e){
       e.stopPropagation();
     });
-  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script>
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -842,7 +865,6 @@ S_{biased}^{2}{=}\frac{n-1}{n}S_{unbiased}^{2}   \nonumber
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
 
-  
 
   
 
